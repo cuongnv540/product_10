@@ -1,0 +1,3 @@
+<td colspan="6">
+  <?php echo __('%%id%% - %%name%% - %%description%% - %%category_id%% - %%created_at%% - %%updated_at%%', array('%%id%%' => link_to($betyolo_side->getId(), 'betyolo_side_edit', $betyolo_side), '%%name%%' => $betyolo_side->getName(), '%%description%%' => $betyolo_side->getDescription(), '%%category_id%%' => $betyolo_side->getCategoryId(), '%%created_at%%' => false !== strtotime($betyolo_side->getCreatedAt()) ? format_date($betyolo_side->getCreatedAt(), "f") : '&nbsp;', '%%updated_at%%' => false !== strtotime($betyolo_side->getUpdatedAt()) ? format_date($betyolo_side->getUpdatedAt(), "f") : '&nbsp;'), 'messages') ?>
+</td>
